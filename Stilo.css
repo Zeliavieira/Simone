@@ -1,0 +1,22 @@
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#mensagem {
+    margin-bottom: 20px;
+}
+
+#opcoes {
+    margin-bottom: 20px;
+}
+
+#resposta {
+    font-weight: bold;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}

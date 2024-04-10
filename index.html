@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slide de Agradecimento</title>
+<style>
+  body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+background-image: url(imagem/Gratidão\ \(4\).jpg);background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 700px;
+    width: 100%;
+  }
+  h1{
+    text-transform: uppercase;
+    color:orangered ;
+    font-size: 22px;
+    text-align: right;
+
+  }
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0px;
+    color: gold;
+    text-transform: uppercase;
+    font-size: 20px;
+    font: 1em sans-serif;
+    background-color: transparent; /* Cor de fundo do contêiner */
+  }
+  .container 
+  h1{
+ width: 100%;
+
+  }
+  #message {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  #response {
+    font-size: 20px;
+    margin-top: 20px;
+    color: red;
+  }
+  .fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Estilo para o contêiner do vídeo */
+.video-container {
+  position: relative;
+  width: 50px;
+  padding-bottom: ; /* Proporção de aspecto de 16:9 (Altura/Largura) */
+  margin: 0 auto;
+}
+
+/* Estilo para o vídeo */
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  right: 500px;
+  width: 5px;
+  height: 50px;
+  padding-bottom: 120px;
+}
+
+button{
+left: 500px;
+margin-bottom: 50px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- Substitua o ID_DO_VÍDEO pelo ID do vídeo do YouTube que você deseja incorporar -->
+  <div id="message"></div>
+  <div id="response"></div>
+  <iframe width="150" height="90" src="https://www.youtube.com/embed/kVGIIvnG1_E" title="Z-Maguinho do Piauí - Deus" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="150" height="90" src="https://www.youtube.com/embed/BZUn5VdOAIA" title="as melhores dancinhas engraçadas do tiktok  top 10 dancinhas da semana #01" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <h1><b>O jogo virou, Acertar para não dançar 💃.
+ <audio controls>
+    <source src="imagem/AUD-20171124-WA0042.mp3" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+  </audio></b></h1>   
+  <button onclick="showNextMessage()">Próxima Mensagem, Chocolate 🍫 ou Dancinha 💃?</button> 
+ 
+</div>
+
+
+<script>
+  const messages = [
+    "Pró Simone, Você será sempre a pessoa a ser lembrada! - Adriana",
+    "Eu tive o privilégio de ter aulas, conversa, apoio e encorajamento de uma mulher incrível, dedicada, confesso que a experiência foi maravilhosa! - Angela",
+    "Simone, obrigada por todo conhecimento compartilhado, obrigada por toda carona que vc me deu no decorrer das aulas, por hj especialmente que no toró que estava, vc me deixou praticamente na porta da minha casa e nem se importou quando eu molhei seu carro com o guarda chuva. Serei eternamente grata Que a vida te retorne toda bondade ao qual você vem semeando E se rolar uma indicação de estágio ou trabalho, não se esqueça de mim não kkkkkkkkkkkkkkk.! - Lidiane",
+    "Gratidão obrigada por ser uma fonte de inspiração e por me motivar buscar o melhor de mim  mesma. Por me encorajar a alcançar meus sonhos. Fé em mim é inspiradora. Prof obrigada por ser mais que uma professora é que o próximo curso que eu for fazer consiga uma carona como a sua opinião.! - Barbara",
+    "Mestre Simone! mais que mestre, também foi uma amiga, dedicou seu tempo e sua experiência para que nosso aprendizado fosse também um aprendizado de vida... meu carinho e minha  homenagem.! - Zelia",
+    "Seu carinho transforma a sala de aula em um lar de aprendizado, e somos sortudos (as) por ter você como nossa professora.” “Você não é apenas uma professora, mas uma amiga que nos ensina com amor e carinho. Obrigada por ser tão especial Conhecimento nunca é demais e vou levar comigo o que aprendi em sala de aula. Obrigada por tanto.! - Alice",
+    "Você é uma pessoa vencedora parabéns pela sua conquista! - Elizabeth",
+    "Quero agradecer do fundo do meu coração por todo o seu empenho e dedicação em nos ensinar. Suas aulas são sempre tão cativantes e inspiradoras, e eu realmente aprecio todo o conhecimento que compartilha conosco. Obrigada por ser uma mentora tão incrível e por fazer a diferença na minha vida. Com carinho...! - Audrey",
+    "Romanos 12:7-8 NVI. Se o dom é servir, sirva; se é ensinar, ensine; se é encorajar, que assim o faça; se é contribuir, que contribua generosamente; se é exercer liderança, que a exerça com dedicação; se é mostrar misericórdia, que o faça com alegria.Todo aquele que ensina deve ter um coração disposto a aprender. Pois só é possível ensinar tendo um coração humilde e disposto a aprender. Que você seja um canal de bênção e possa ensinar a muitos o caminho que leva a vida eterna.! - Gleidson",
+    "Obrigada Simone por todos os dias de aprendizado, valeu muito! só dá errado quando você desiste de dar certo, gratidão, gratidão e gratidão beijos! - Edna",
+    "Obrigada por me ensinar coisas que eu achei que nunca conseguiria aprender, a sua profissão é inspiradora e é um grande privilégio poder aprender com você! - Juci",
+    "Seu comprometimento, dedicação, paixão pelo ensino e sua habilidade em transmitir conhecimento foram verdadeiramente inspiradoras e deixaram uma marca positiva em mim. Sou muito grata por ter tido a oportunidade de aprender com alguém tão talentoso e dedicado como você.! - Jamile",
+  
+  ];
+
+  let currentMessageIndex = 0;
+  let currentStudentName = '';
+
+  function showNextMessage() {
+    if (currentMessageIndex < messages.length) {
+      const message = messages[currentMessageIndex].split(' - ')[0];
+      currentStudentName = messages[currentMessageIndex].split(' - ')[1];
+      document.getElementById('message').innerText = message;
+      document.getElementById('response').innerText = '';
+      setTimeout(() => {
+        const guess = prompt("Quem escreveu essa mensagem?");
+        checkGuess(guess);
+      }, 4000); // Espera 5 segundos antes de pedir a resposta
+      currentMessageIndex++;
+    } else {
+      alert("Todas as mensagens foram mostradas!");
+    }
+  }
+
+  function checkGuess(guess) {
+    const responseElement = document.getElementById('response');
+    
+    if (guess && guess.toLowerCase() === currentStudentName.toLowerCase()) {
+      responseElement.innerText = `Parabéns, você acertou! ${currentStudentName} escreveu a mensagem. Simone ganhará um chocolate!`;
+    } else {
+      responseElement.innerText = `Você errou! ${currentStudentName} escreveu a mensagem. Simone precisará fazer uma dancinha!`;
+    }
+  }
+  function checkGuess(guess) {
+  const responseElement = document.getElementById('response');
+  
+  if (guess && guess.toLowerCase() === currentStudentName.toLowerCase()) {
+    responseElement.innerText = `Parabéns, você acertou! ${currentStudentName} escreveu a mensagem. Simone ganhará um chocolate !`;
+  } else {
+    responseElement.innerText = `Você errou! ${currentStudentName} escreveu a mensagem. Simone precisará fazer uma dancinha💃!`;
+    responseElement.classList.add('fade-in'); // Adiciona a classe de fade-in à resposta
+  }
+}
+
+</script>
+</body>
+</html>
